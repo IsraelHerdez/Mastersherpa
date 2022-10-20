@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+ 
+</head>
+<body>
+
+
+<div>
+  <nav class="navbar navbar-expand-sm bg-light" >
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item" *ngFor="let data of datosMenu">
+      <a class="nav-link"   href="{{data.url}}"><i class="{{data.icon}}"></i>{{data.titulo}}</a>
+    </li>
+  
+  </ul> 
+  
+  </nav>
+</div>
+
+<app-checkout></app-checkout>
+
+
+</body>
+</html>
